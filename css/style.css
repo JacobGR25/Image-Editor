@@ -1,0 +1,86 @@
+/* LAYOUT */
+
+body{
+    display: flex;
+}
+
+.panel{
+    height: 100vh;
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#left-panel{
+    background-color: lightskyblue;
+}
+#right-panel{
+    background-color: lightseagreen;
+}
+
+#canvas-container{
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+/* DROPZONE */
+#dropzone{
+    width: 320px;
+    height: 80px;
+    border: 1px dashed white;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropzone.dragover{
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* DOWNLOAD BUTTON */
+#download-button{
+    width: 320px;
+    height: 40px;
+
+    margin-top: 10px;
+
+    background-color: white;
+    cursor: pointer;
+}
+
+#download-button:hover{
+    background-color: lightgray;
+}
+
+/* PRESET SELECT */
+#preset-select{
+    margin-top: 5px;
+}
+
+/* EXTRA SETTINGS */
+#extra-settings{
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+#extra-settings p, #extra-settings label {
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#color-box{
+    height: 20px;
+    width: 40px;
+    background-color: white;
+    border: 1px solid black;
+}

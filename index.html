@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="left-panel" class="panel">
+        <h1>Image Editor</h1>
+        <div id="canvas-container"></div>
+        <div id="dropzone">Drag and Drop your image here</div>
+        <button id="download-button">Download image</button>
+
+    </div>
+    <div id="right-panel" class="panel">
+        <label for="red-slider">Red</label>
+        <input id="red-slider" type="range" min="-100" max= "100" value="0">
+        <label for="green-slider">Green</label>
+        <input id="green-slider" type="range" min="-100" max= "100" value="0">
+        <label for="blue-slider">Blue</label>
+        <input id="blue-slider" type="range" min="-100" max= "100" value="0">
+
+        <select id="preset-select">
+            <option value="none">None</option>
+            <option value="grayscale">Grayscale</option>
+            <option value="bw">Black & White</option>
+            <option value="sc">Single Color</option>
+
+        </select>
+
+        <div id="extra-settings">
+            <p>Color</p>
+            <div id="color-box"></div>
+            <label for="tolerance-slider">Tolerance</label>
+            <input id="tolerance-slider" type="range" min="0" max= "100" value="10">
+        </div>
+    </div>
+
+    <script src="js/p5.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
